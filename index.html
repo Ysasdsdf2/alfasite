@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="shortcut icon" href="alfa.png" >
+
+        <style type="text/css">
+			ul,ol
+			{
+				list-style:none;
+			}
+			ol,ul,li
+			{
+				margin:0; padding:0;
+			}
+			.menu 
+			{
+				width:100px;
+			}
+			.menu a
+			{
+				color:black;
+				text-decoration:none;
+				display:block;
+				line-height:25px;
+				font-weight:bolder;
+				padding-left:10px;
+			}
+			.menu a:hover
+			{
+				color:white;
+				background:#e4e4e4;
+			}
+			.menu li 
+			{
+				position:relative;
+				background:white;
+			}
+			.menu ul 
+			{
+				display:none;
+				position:absolute;
+				left:100px;
+				top:0px;
+				width:140px;
+			}
+			.menu li:hover > ul 
+			{
+				display:block;
+			}
+
+		</style>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>FRC - Alfa Robotics</title>
+    </head>
+    <body >
+
+       
+
+    
+        <font size="5"> 
+       <h2>
+       <div align="center" >
+       <script language="JavaScript1.2" >
+        
+        
+        var message="Alfa Robotics"
+        var neonbasecolor="#10def5"
+        var neontextcolor="#171650"
+        var flashspeed=75 
+        
+        
+        
+        var n=0
+        if (document.all||document.getElementById){
+        document.write('')
+        for (m=0;m<message.length;m++)
+        document.write('<span id="neonlight'+m+'">'+message.charAt(m)+'</span>')
+        document.write('')
+        }
+        else
+        document.write(message)
+        
+        function crossref(number){
+        var crossobj=document.all? eval("document.all.neonlight"+number) : document.getElementById("neonlight"+number)
+        return crossobj
+        }
+        
+        function neon(){
+        
+        
+        if (n==0){
+        for (m=0;m<message.length;m++)
+        
+        crossref(m).style.color=neonbasecolor
+        }
+        
+        
+        crossref(n).style.color=neontextcolor
+        
+        if (n<message.length-1)
+        n++
+        else{
+        n=0
+        clearInterval(flashing)
+        setTimeout("beginneon()",1000)
+        return
+        }
+        }
+        
+        function beginneon(){
+        if (document.all||document.getElementById)
+        flashing=setInterval("neon()",flashspeed)
+        }
+        beginneon()
+        
+        
+        </script>
+        </h2>
+    </div>
+    </font>
+
+    
+
+    <ul class="menu">
+        <li><a href="index.html">Anasayfa</a></li>
+        <li><a href="">FRC </a>
+            <ul>
+                <li><a href="degerlendir.html"></a></li>
+                <li><a href="degerlendirmeler.html">Değerendirmeler</a>
+                 
+                    
+                </li>
+            </ul>
+        </li>
+        
+    </ul>
+    <br>
+
+
+
+        <form id="formid">
+        
+            <fieldset>
+                <img src="alfa.png" alt="Alfa Robotics" width="80" height="80" align="right">
+                <legend>Takım Seçimi</legend><br/>
+                Spectator Name: <select name="specname"id="specname">
+                    <option value="Rahmi Yusuf Cebeci">Ahmet Faruk Maşalı</option>
+                    <option value="Toygar Akın">Alev Zeynep Özdemir</option>
+                    <option value="">Alperen Kılıç</option>
+                    <option value="">Baran Şahin Öztürk</option>
+                    <option value="">Elanur Sürücü</option>
+                    <option value="">Eyüpcan Çokan</option>
+                    <option value="">Furkan Yılmaz</option>
+                    <option value="">Hacı Ali Yaman</option>
+                    <option value="">İlayda Acar</option>
+                    <option value="">Mehmet Şirin Alper Akyüz</option>
+                    <option value="">Melike Çağıran</option>
+                    <option value="">Mesut Can Kılıç</option>
+                    <option value="">Muhammet Enis Uğur</option>
+                    <option value="">Rüveyda Şen</option>
+                    <option value="">Sıla Kara</option>
+                    <option value="">Toygar Akın</option>
+                    <option value="">Yiğit Yaylacı</option>
+
+                    
+                    </select>
+                
+                <br><br>
+                
+                Team Selection: <select name="takim"id="takimsecme">
+                    <option value="">1772</option>
+                    <option value="">4972</option>
+                    <option value="">5665</option>
+                    <option value="">6014</option>
+                    <option value="">6417</option>
+                    <option value="">6436</option>
+                    <option value="">6459</option>
+                    <option value="">6838</option>
+                    <option value="">6948</option>
+                    <option value="">6985</option>
+                    <option value="">6988</option>
+                    <option value="">7086</option>
+                    <option value="">7285</option>
+                    <option value="">7292</option>
+                    <option value="">7523</option>
+                    <option value="">7549</option>
+                    <option value="">7575</option>
+                    <option value="">7575</option>
+                    <option value="">7672</option>
+                    <option value="">7682</option>
+                    <option value="">7729</option>
+                    <option value="">7742</option>
+                    <option value="">7748</option>
+                    <option value="">7758</option>
+                    <option value="">8054</option>
+                    <option value="">8056</option>
+                    <option value="">8058</option>
+                    <option value="">8084</option>
+                    <option value="">8092</option>
+                    <option value="">8151</option>
+                    <option value="">8153</option>
+                    <option value="">8158</option>
+                    <option value="">8209</option>
+                    <option value="">8240</option>
+                    <option value="">8308</option>
+                    <option value="">8504</option>
+                    <option value="">8636</option>
+                    <option value="">8747</option>
+                    <option value="">8762</option>
+                    <option value="">8777</option>
+                    <option value="">8781</option>
+                    <option value="">8796</option>
+                    <option value="">8797</option>
+                    <option value="">8798</option>
+                    <option value="">8800</option>
+                    <option value="">8856</option>
+                    <option value="">8859</option>
+                    
+
+
+
+                    
+
+
+                    </select>
+                        
+                
+               </fieldset>
+               <fieldset>
+                <legend>Takım Başarıları</legend><br/>
+                <input name="TAXI"
+                       type="checkbox"
+                       value="TAXI" tabindex="20"/> TAXI    
+                <input name="değişecek"
+                       type="checkbox"
+                       value="değişecek" tabindex="21"/>     
+                <input name="değişecek"
+                       type="checkbox"
+                       value="değişecek" tabindex="22"/> 
+                <input name="değişecek" 
+                       type="checkbox"
+                       value="değişecek" tabindex="23"/><br/><br/>  
+              
+                
+               </fieldset>
+               <fieldset>
+                <legend>Takımın Attığı Sayılar</legend><br/>
+                <br/>
+                <td>▲ CARGO NUMBER</td><br>
+                <td><input type="number" name="atilantop" id="atilantop" ></td>
+              <br/><br/>
+              
+                <br/>
+                <td>▼ CARGO NUMBER</td><br>
+                <td><input type="number" name="deneme" id="deneme" ></td>
+               
+            <br><br>
+               <div align="center"><button  type="submit" form="formid">Gönder</button></div>
+
+            </fieldset>
+
+        </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+</html>
